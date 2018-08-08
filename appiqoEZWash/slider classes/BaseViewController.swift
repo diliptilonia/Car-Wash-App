@@ -26,14 +26,16 @@ class BaseViewController: UIViewController, SlideMenuDelegate {
         switch(index){
         case 0:
             print("Home\n", terminator: "")
+            print("error is here")
 
-            self.openViewControllerBasedOnIdentifier("Home")
+            self.openViewControllerBasedOnIdentifier("sideMenu")
             
+            print("error is not here")
             break
         case 1:
             print("Play\n", terminator: "")
             
-            let nvc = UIStoryboard.init(name: "Main", bundle: nil).instantiateViewController(withIdentifier: "profileVC") as! profileVC
+//            let nvc = UIStoryboard.init(name: "Main", bundle: nil).instantiateViewController(withIdentifier: "profileVC") as! profileVC
             
                        self.openViewControllerBasedOnIdentifier("profileVC")
             

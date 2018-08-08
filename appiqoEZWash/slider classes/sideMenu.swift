@@ -12,7 +12,8 @@ class sideMenu: BaseViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        UserDefaults.standard.set(true, forKey: "home")
+        UserDefaults.standard.set(true, forKey: "Home")
+        UserDefaults.standard.set(true, forKey: "signUp")
 
 
         self.addSlideMenuButton()

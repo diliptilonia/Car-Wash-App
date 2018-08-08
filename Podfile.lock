@@ -1,5 +1,5 @@
 PODS:
-  - KWVerificationCodeView (0.1.9)
+  - KWVerificationCodeView (0.2.0)
 
 DEPENDENCIES:
   - KWVerificationCodeView
@@ -9,7 +9,7 @@ SPEC REPOS:
     - KWVerificationCodeView
 
 SPEC CHECKSUMS:
-  KWVerificationCodeView: 53173d5fcd2b38f0c02e3606077be194a2865435
+  KWVerificationCodeView: 213c7303ba43ff5fabffa77f4f558a76225a8f85
 
 PODFILE CHECKSUM: b9eef994cbe8dbf5e9243b66c14a644c422693e0
 

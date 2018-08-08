@@ -22,7 +22,8 @@ class pageVC: UIPageViewController, UIPageViewControllerDelegate, UIPageViewCont
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        
+        UserDefaults.standard.set(true, forKey: "welcome")
+
         self.delegate = self
         self.dataSource = self
         if let firstVC = VCArr.first {

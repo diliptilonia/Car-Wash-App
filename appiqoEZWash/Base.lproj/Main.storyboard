@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14113" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="sNA-lt-spo">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14113" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="poK-v1-NfY">
     <device id="retina4_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
@@ -561,6 +561,7 @@
                         <outlet property="cityTextField" destination="YGq-xF-0Zb" id="BbX-ro-EAc"/>
                         <outlet property="nextButtonOutlat" destination="5lU-zA-GmA" id="sKk-WV-ecJ"/>
                         <outlet property="phoneNumberTextField" destination="GdR-31-QcF" id="3Rg-NZ-KPH"/>
+                        <segue destination="WlD-Va-gYR" kind="show" id="I2B-uJ-JvF"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Bn1-1c-xmi" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -595,6 +596,7 @@
                                 <connections>
                                     <action selector="continueButton:" destination="wjB-Jx-g54" eventType="touchUpInside" id="kgc-WB-cqN"/>
                                     <action selector="submitButton:" destination="WlD-Va-gYR" eventType="touchUpInside" id="fn2-IH-92M"/>
+                                    <segue destination="lax-Ab-3gX" kind="show" identifier="goToHome" id="fbq-Ej-di5"/>
                                 </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="The One-Time Password (OTP) will be valid for 10 minutes from the time of generation,after which it expires" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="8fb-ot-XUv">
@@ -1002,22 +1004,8 @@ and external wash</string>
                                 <rect key="frame" x="8" y="252" width="359" height="163"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Welcome To" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="U2M-Vo-Rwm">
-                                <rect key="frame" x="47" y="65" width="269" height="133"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" name="Calibri" family="Calibri" pointSize="35"/>
-                                <color key="textColor" red="0.20784313730000001" green="0.29803921570000003" blue="0.34901960780000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="EZ WASH" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="AZW-Rk-Gdl">
-                                <rect key="frame" x="72" y="560" width="212" height="70"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" name="Oswald-Regular" family="Oswald" pointSize="35"/>
-                                <color key="textColor" red="0.97647058819999999" green="0.41176470590000003" blue="0.054901960780000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                <nil key="highlightedColor"/>
-                            </label>
                         </subviews>
-                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <color key="backgroundColor" red="0.97647058823529409" green="0.41176470588235292" blue="0.054901960784313725" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <viewLayoutGuide key="safeArea" id="NqF-5J-YHC"/>
                     </view>
                 </viewController>
@@ -1033,4 +1021,7 @@ and external wash</string>
         <image name="Group 489" width="220" height="219"/>
         <image name="back" width="512" height="512"/>
     </resources>
+    <inferredMetricsTieBreakers>
+        <segue reference="vad-pl-2Od"/>
+    </inferredMetricsTieBreakers>
 </document>

@@ -12,67 +12,12 @@ import UIKit
 class AppDelegate: UIResponder, UIApplicationDelegate {
 
     var window: UIWindow?
-//
-//    private func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [NSObject: AnyObject]?) -> Bool {
-//
-//
-//        if UserDefaults.standard.bool(forKey: "pageVC") == true{
-//          let mainStoryboard = UIStoryboard(name: "Main", bundle: nil)
-//            let exampleVC = mainStoryboard.instantiateViewController(withIdentifier: "logInVC") as! ViewController
-//            let navigationController = UINavigationController(rootViewController: exampleVC)
-//            self.window = UIWindow(frame: UIScreen.main.bounds)
-//            self.window!.rootViewController = navigationController
-//            self.window!.makeKeyAndVisible()
-//
-//
-//        } else
-//        {
-//            let mainStoryboard = UIStoryboard(name: "Main", bundle: nil)
-//            let exampleVC = mainStoryboard.instantiateViewController(withIdentifier: "pageVC") as! pageVC
-//            let pageViewCOntroller = UINavigationController(rootViewController: exampleVC)
-//            self.window = UIWindow(frame: UIScreen.main.bounds)
-//            self.window?.rootViewController = pageViewCOntroller
-//            self.window?.makeKeyAndVisible()
-//                    }
-//        if let controller = UIStoryboard(name: "Main", bundle: nil).instantiateViewController(withIdentifier: "launchedScreenDelay") as? launchedScreenDelay {
-//            if let window = self.window, let rootViewController = window.rootViewController {
-//                var currentController = rootViewController
-//                while let presentedController = currentController.presentedViewController {
-//                    currentController = presentedController
-//                }
-//                currentController.present(controller, animated: true, completion: nil)
-//            }
-//            Thread.sleep(forTimeInterval: 3.0)
-//
-//        }
-//
-//
-//
-//
-//        return true
-//    }
+
     
     
     private func application(application: UIApplication, didFinishLaunchingWithOptions launchOptions: [NSObject: AnyObject]?) -> Bool {
         
   
-        
-        let isRegistered = UserDefaults.standard.bool(forKey: "welcome")
-        
-        if isRegistered == false{
-            print("it's not working")
-            // implement register view controller
-            let registerViewController = UIStoryboard(name: "Main", bundle: nil).instantiateViewController(withIdentifier: "logInVC") as! ViewController
-            self.window?.rootViewController = registerViewController
-            self.window?.makeKeyAndVisible()
-            
-        }else{
-            print("it's not working")
-            // implement home view controller
-            let homeViewController = UIStoryboard(name: "Main", bundle: nil).instantiateViewController(withIdentifier: "pageVC") as! pageVC
-            self.window?.rootViewController = homeViewController
-            self.window?.makeKeyAndVisible()
-        }
         
         return true
     }

@@ -20,7 +20,10 @@ class ViewController: UIViewController, UITextFieldDelegate {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        UserDefaults.standard.set(true, forKey: "pageVC")
+//        UserDefaults.standard.set(true, forKey: "signUp")
+
+        
+//        UserDefaults.standard.set(true, forKey: "pageVC")
  
 //        continueButtonOutlet.backgroundColor = UIColor
         showPicker()
