@@ -42,11 +42,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "appiqoEZWash/slider classes/BaseViewController.swift"
-            timestampString = "555392980.529426"
+            timestampString = "555412604.996408"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "30"
-            endingLineNumber = "30"
+            startingLineNumber = "31"
+            endingLineNumber = "31"
             landmarkName = "slideMenuItemSelectedAtIndex(_:)"
             landmarkType = "7">
          </BreakpointContent>
@@ -58,11 +58,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "appiqoEZWash/slider classes/BaseViewController.swift"
-            timestampString = "555392980.5327311"
+            timestampString = "555412604.996527"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "32"
-            endingLineNumber = "32"
+            startingLineNumber = "33"
+            endingLineNumber = "33"
             landmarkName = "slideMenuItemSelectedAtIndex(_:)"
             landmarkType = "7">
          </BreakpointContent>
@@ -74,11 +74,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "appiqoEZWash/slider classes/BaseViewController.swift"
-            timestampString = "555392980.533177"
+            timestampString = "555412604.996587"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "34"
-            endingLineNumber = "34"
+            startingLineNumber = "35"
+            endingLineNumber = "35"
             landmarkName = "slideMenuItemSelectedAtIndex(_:)"
             landmarkType = "7">
          </BreakpointContent>

@@ -74,7 +74,11 @@ func showPicker() {
 
     @IBAction func signUpButton(_ sender: UIButton) {
         print("Butin lickced")
-        self.performSegue(withIdentifier: "logInView", sender: nil)
+        let storyboard = UIStoryboard(name: "Main", bundle: nil)
+        let vc = storyboard.instantiateViewController(withIdentifier: "LogInView") as! LogInView
+        navigationController?.pushViewController(vc,
+                                                 animated: true)
+//        self.performSegue(withIdentifier: "logInView", sender: nil)
 
     }
     @IBAction func continueButton(_ sender: UIButton) {

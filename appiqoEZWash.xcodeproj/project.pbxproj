@@ -8,8 +8,6 @@
 
 /* Begin PBXBuildFile section */
 		891A09AA2113F6EC00E881F7 /* pageVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 891A09A92113F6EC00E881F7 /* pageVC.swift */; };
-		891A09AD21141F7C00E881F7 /* calibri in Resources */ = {isa = PBXBuildFile; fileRef = 891A09AB21141F7C00E881F7 /* calibri */; };
-		891A09AE21141F7C00E881F7 /* oswald in Resources */ = {isa = PBXBuildFile; fileRef = 891A09AC21141F7C00E881F7 /* oswald */; };
 		89215E58211329120044A3FD /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89215E57211329120044A3FD /* AppDelegate.swift */; };
 		89215E5A211329120044A3FD /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89215E59211329120044A3FD /* ViewController.swift */; };
 		89215E5D211329120044A3FD /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 89215E5B211329120044A3FD /* Main.storyboard */; };
@@ -30,6 +28,8 @@
 		89A5A0812116F5D5004F6214 /* thirdVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89A5A0802116F5D5004F6214 /* thirdVC.swift */; };
 		89A5A08921176BF6004F6214 /* washingType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89A5A08821176BF6004F6214 /* washingType.swift */; };
 		89A5A0A92118069B004F6214 /* washingTypeTable2.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89A5A0A82118069B004F6214 /* washingTypeTable2.swift */; };
+		89A97480211AC98600519A39 /* oswald in Resources */ = {isa = PBXBuildFile; fileRef = 89A9747E211AC98600519A39 /* oswald */; };
+		89A97482211ACA3E00519A39 /* calibri in Resources */ = {isa = PBXBuildFile; fileRef = 89A97481211ACA3D00519A39 /* calibri */; };
 		89BC846921143E4D00FC9306 /* locationDetailVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89BC846821143E4D00FC9306 /* locationDetailVC.swift */; };
 		89F2AD0121180AA5003AA9A4 /* scheduleCustomeCell2.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89F2AD0021180AA5003AA9A4 /* scheduleCustomeCell2.swift */; };
 		89F2AD03211824AC003AA9A4 /* myBookingCustomCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89F2AD02211824AC003AA9A4 /* myBookingCustomCell.swift */; };
@@ -40,8 +40,6 @@
 /* Begin PBXFileReference section */
 		6C1CBD1CE793D7578EAD5396 /* Pods-appiqoEZWash.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-appiqoEZWash.debug.xcconfig"; path = "Pods/Target Support Files/Pods-appiqoEZWash/Pods-appiqoEZWash.debug.xcconfig"; sourceTree = "<group>"; };
 		891A09A92113F6EC00E881F7 /* pageVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = pageVC.swift; sourceTree = "<group>"; };
-		891A09AB21141F7C00E881F7 /* calibri */ = {isa = PBXFileReference; lastKnownFileType = folder; path = calibri; sourceTree = "<group>"; };
-		891A09AC21141F7C00E881F7 /* oswald */ = {isa = PBXFileReference; lastKnownFileType = folder; path = oswald; sourceTree = "<group>"; };
 		89215E54211329120044A3FD /* appiqoEZWash.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = appiqoEZWash.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		89215E57211329120044A3FD /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		89215E59211329120044A3FD /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -64,6 +62,8 @@
 		89A5A0802116F5D5004F6214 /* thirdVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = thirdVC.swift; sourceTree = "<group>"; };
 		89A5A08821176BF6004F6214 /* washingType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = washingType.swift; sourceTree = "<group>"; };
 		89A5A0A82118069B004F6214 /* washingTypeTable2.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = washingTypeTable2.swift; sourceTree = "<group>"; };
+		89A9747E211AC98600519A39 /* oswald */ = {isa = PBXFileReference; lastKnownFileType = folder; path = oswald; sourceTree = "<group>"; };
+		89A97481211ACA3D00519A39 /* calibri */ = {isa = PBXFileReference; lastKnownFileType = folder; path = calibri; sourceTree = "<group>"; };
 		89BC846821143E4D00FC9306 /* locationDetailVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = locationDetailVC.swift; sourceTree = "<group>"; };
 		89F2AD0021180AA5003AA9A4 /* scheduleCustomeCell2.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = scheduleCustomeCell2.swift; sourceTree = "<group>"; };
 		89F2AD02211824AC003AA9A4 /* myBookingCustomCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = myBookingCustomCell.swift; sourceTree = "<group>"; };
@@ -87,6 +87,7 @@
 		89215E4B211329120044A3FD = {
 			isa = PBXGroup;
 			children = (
+				89A9747C211AC8A800519A39 /* Fonts */,
 				89215E56211329120044A3FD /* appiqoEZWash */,
 				89215E55211329120044A3FD /* Products */,
 				91CB7769BC2F74DC3A6E440B /* Pods */,
@@ -113,8 +114,6 @@
 				89A5A070211631F7004F6214 /* slideHomeVC.swift */,
 				89A5A06B21162003004F6214 /* slider classes */,
 				89215E5E211329150044A3FD /* Assets.xcassets */,
-				891A09AB21141F7C00E881F7 /* calibri */,
-				891A09AC21141F7C00E881F7 /* oswald */,
 				89215E60211329150044A3FD /* LaunchScreen.storyboard */,
 				89215E63211329150044A3FD /* Info.plist */,
 			);
@@ -156,6 +155,15 @@
 				89A5A07A2116969D004F6214 /* logoutVC.swift */,
 			);
 			path = "slider classes";
+			sourceTree = "<group>";
+		};
+		89A9747C211AC8A800519A39 /* Fonts */ = {
+			isa = PBXGroup;
+			children = (
+				89A97481211ACA3D00519A39 /* calibri */,
+				89A9747E211AC98600519A39 /* oswald */,
+			);
+			path = Fonts;
 			sourceTree = "<group>";
 		};
 		89E4C0292116A976008B6C8B /* homePage */ = {
@@ -247,9 +255,9 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				891A09AE21141F7C00E881F7 /* oswald in Resources */,
+				89A97480211AC98600519A39 /* oswald in Resources */,
 				89215E62211329150044A3FD /* LaunchScreen.storyboard in Resources */,
-				891A09AD21141F7C00E881F7 /* calibri in Resources */,
+				89A97482211ACA3E00519A39 /* calibri in Resources */,
 				89215E5F211329150044A3FD /* Assets.xcassets in Resources */,
 				89215E5D211329120044A3FD /* Main.storyboard in Resources */,
 			);
@@ -265,10 +273,12 @@
 			);
 			inputPaths = (
 				"${SRCROOT}/Pods/Target Support Files/Pods-appiqoEZWash/Pods-appiqoEZWash-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/JGProgressHUD/JGProgressHUD.framework",
 				"${BUILT_PRODUCTS_DIR}/KWVerificationCodeView/KWVerificationCodeView.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/JGProgressHUD.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/KWVerificationCodeView.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;

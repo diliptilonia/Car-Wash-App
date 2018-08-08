@@ -7,14 +7,16 @@
 //
 
 import UIKit
-
+import JGProgressHUD
 class launchedScreenDelay: UIViewController {
     var window: UIWindow?
 
 
     override func viewDidLoad() {
         super.viewDidLoad()
+        showSimpleHUD()
         print("working in launch screen delay")
+        
 ////        DispatchQueue.main.asyncAfter(deadline: .now() + 2.0) {
 ////            let stroboard = UIStoryboard(name: "Main", bundle: nil)
 ////            let vc = self.storyboard?.instantiateViewController(withIdentifier: "logInVC") as! ViewController
@@ -24,6 +26,7 @@ class launchedScreenDelay: UIViewController {
             print("Yes welcomeScreen shown before")
             
                 print("Yes sign up already ")
+        
                 DispatchQueue.main.asyncAfter(deadline: .now() + 2.0) {
                 
                 let mainStoryboard = UIStoryboard(name: "Main", bundle: nil)
@@ -57,6 +60,16 @@ class launchedScreenDelay: UIViewController {
         }
         // Do any additional setup after loading the view.
     }
+    
+    func showSimpleHUD() {
+        
+        let hud = JGProgressHUD(style: .dark)
+        hud.vibrancyEnabled = true
+        
+        hud.shadow = JGProgressHUDShadow(color: .black, offset: .zero, radius: 5.0, opacity: 0.2)
+        hud.show(in: self.view)
+    }
+
 
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()

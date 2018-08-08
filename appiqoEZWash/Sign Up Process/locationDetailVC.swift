@@ -56,14 +56,13 @@ class locationDetailVC: UIViewController, UITextFieldDelegate {
     
     @IBAction func nextButton(_ sender: UIButton) {
         let vc = UIStoryboard.init(name: "Main", bundle: nil).instantiateViewController(withIdentifier: "OTPvc") as! OTPvc
-        present(vc, animated: true, completion: nil)
+        self.navigationController?.pushViewController(vc, animated: true)
     }
     
-    @IBAction func closeButton(_ sender: UIButton) {
-      let vc = UIStoryboard.init(name: "Main", bundle: nil).instantiateViewController(withIdentifier: "LogInView") as! LogInView
-        present(vc, animated: false, completion: nil)
-        
-        
-    }
+//    @IBAction func closeButton(_ sender: UIButton) {
+////      let vc = UIStoryboard.init(name: "Main", bundle: nil).instantiateViewController(withIdentifier: "LogInView") as! LogInView
+////        present(vc, animated: false, completion: nil)
+//
+//    }
     
 }

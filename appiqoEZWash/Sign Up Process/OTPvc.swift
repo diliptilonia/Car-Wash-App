@@ -46,21 +46,23 @@ class OTPvc: UIViewController {
     
     @IBAction func submitButton(_ sender: UIButton) {
         print("Working submit button")
-        performSegue(withIdentifier: "goToHome", sender: self)
+        let storyboard = UIStoryboard(name: "Main", bundle: nil).instantiateViewController(withIdentifier: "sideMenu") as! sideMenu
+        self.navigationController?.pushViewController(storyboard, animated: true)
+//        performSegue(withIdentifier: "goToHome", sender: self)
     }
     
-     func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
-        if segue.identifier == "goToHome"{
-            var vc = segue.destination as! sideMenu
-        }
-    }
-        
+//     func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
+//        if segue.identifier == "goToHome"{
+//            var vc = segue.destination as! sideMenu
+//        }
+//    }
+//
     
     
-    @IBAction func backButton(_ sender: UIButton) {
-        let vc = UIStoryboard.init(name: "Main", bundle: nil).instantiateViewController(withIdentifier: "locationDetailVC") as! locationDetailVC
-        present(vc, animated: false, completion: nil)
-    }
+//    @IBAction func backButton(_ sender: UIButton) {
+//        let vc = UIStoryboard.init(name: "Main", bundle: nil).instantiateViewController(withIdentifier: "locationDetailVC") as! locationDetailVC
+//        present(vc, animated: false, completion: nil)
+//    }
     
 
 }

@@ -2,6 +2,16 @@
 <!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
 <plist version="1.0">
 <dict>
+	<key>UIAppFonts</key>
+	<array>
+		<string>Oswald-Bold</string>
+		<string>Oswald-Light</string>
+		<string>Oswald-Regular</string>
+		<string>CALIBRIB</string>
+		<string>CALIBRII</string>
+		<string>CALIBRIZ</string>
+		<string></string>
+	</array>
 	<key>CFBundleDevelopmentRegion</key>
 	<string>$(DEVELOPMENT_LANGUAGE)</string>
 	<key>CFBundleDisplayName</key>

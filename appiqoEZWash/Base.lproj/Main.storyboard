@@ -19,9 +19,6 @@
         <array key="Calibri.ttf">
             <string>Calibri</string>
         </array>
-        <array key="Oswald-Bold.ttf">
-            <string>Oswald-Bold</string>
-        </array>
         <array key="Oswald-Light.ttf">
             <string>Oswald-Light</string>
         </array>
@@ -222,7 +219,6 @@
                                 <connections>
                                     <action selector="signUpButton:" destination="wjB-Jx-g54" eventType="touchUpInside" id="RHA-NV-dG2"/>
                                     <action selector="signUpButton:" destination="jHJ-Wl-l17" eventType="touchUpInside" id="XEq-jP-YB3"/>
-                                    <segue destination="T7c-nd-zTK" kind="show" identifier="locationDetailVC" id="2Uw-FA-Bl0"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="eEA-oX-Uor">
@@ -247,6 +243,7 @@
                         <outlet property="passwordTextField" destination="TUf-yY-5BJ" id="4mZ-WE-McH"/>
                         <outlet property="secondNameTextField" destination="EHr-go-SYW" id="c3S-zf-dF5"/>
                         <outlet property="signUpButtonOutlat" destination="mOU-eo-WF0" id="EhF-ee-rEK"/>
+                        <segue destination="T7c-nd-zTK" kind="show" id="ca6-KB-iGN"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="gw7-6T-rni" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -545,14 +542,6 @@
                                 <color key="textColor" name="systemOrangeColor" catalog="System" colorSpace="catalog"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ffh-RO-Rbn">
-                                <rect key="frame" x="0.0" y="35" width="40" height="40"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="Button" image="back"/>
-                                <connections>
-                                    <action selector="closeButton:" destination="T7c-nd-zTK" eventType="touchUpInside" id="jZA-qe-eM9"/>
-                                </connections>
-                            </button>
                         </subviews>
                         <color key="backgroundColor" red="0.20784313725490194" green="0.29803921568627451" blue="0.34901960784313724" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <viewLayoutGuide key="safeArea" id="NMx-2G-ZLA"/>
@@ -561,7 +550,7 @@
                         <outlet property="cityTextField" destination="YGq-xF-0Zb" id="BbX-ro-EAc"/>
                         <outlet property="nextButtonOutlat" destination="5lU-zA-GmA" id="sKk-WV-ecJ"/>
                         <outlet property="phoneNumberTextField" destination="GdR-31-QcF" id="3Rg-NZ-KPH"/>
-                        <segue destination="WlD-Va-gYR" kind="show" id="I2B-uJ-JvF"/>
+                        <segue destination="WlD-Va-gYR" kind="show" id="8DO-yg-TKN"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Bn1-1c-xmi" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -596,7 +585,6 @@
                                 <connections>
                                     <action selector="continueButton:" destination="wjB-Jx-g54" eventType="touchUpInside" id="kgc-WB-cqN"/>
                                     <action selector="submitButton:" destination="WlD-Va-gYR" eventType="touchUpInside" id="fn2-IH-92M"/>
-                                    <segue destination="lax-Ab-3gX" kind="show" identifier="goToHome" id="fbq-Ej-di5"/>
                                 </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="The One-Time Password (OTP) will be valid for 10 minutes from the time of generation,after which it expires" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="8fb-ot-XUv">
@@ -626,15 +614,6 @@
                                     </userDefinedRuntimeAttribute>
                                 </userDefinedRuntimeAttributes>
                             </view>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fl0-Y2-h6i">
-                                <rect key="frame" x="0.0" y="35" width="40" height="40"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="Button" image="back"/>
-                                <connections>
-                                    <action selector="backButton:" destination="WlD-Va-gYR" eventType="touchUpInside" id="j1a-EO-DkS"/>
-                                    <action selector="closeButton:" destination="T7c-nd-zTK" eventType="touchUpInside" id="3RC-c6-xQW"/>
-                                </connections>
-                            </button>
                         </subviews>
                         <color key="backgroundColor" red="0.20784313725490194" green="0.29803921568627451" blue="0.34901960784313724" alpha="1" colorSpace="calibratedRGB"/>
                         <viewLayoutGuide key="safeArea" id="2EE-sC-dxm"/>
@@ -642,6 +621,7 @@
                     <connections>
                         <outlet property="submitOutLat" destination="ftg-hP-OiV" id="Azv-wK-kn4"/>
                         <outlet property="verificationCodeView" destination="D3S-IP-iva" id="SlI-rP-Z1e"/>
+                        <segue destination="lax-Ab-3gX" kind="show" id="Sxh-dK-ETu"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="fHg-YJ-d7g" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -666,16 +646,7 @@
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Welcome " textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="xqU-iN-BwL">
                                 <rect key="frame" x="109" y="60" width="157" height="57"/>
-                                <fontDescription key="fontDescription" name="Oswald-Regular" family="Oswald" pointSize="35"/>
-                                <color key="textColor" red="0.97647058823529409" green="0.41176470588235292" blue="0.054901960784313725" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Lorem ipsum dolor sit amet,  consectetur adipiscing elit." textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="b6R-Ci-97k">
-                                <rect key="frame" x="16" y="481" width="342" height="102"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="102" id="FEd-FU-m5V"/>
-                                </constraints>
-                                <fontDescription key="fontDescription" type="system" pointSize="28"/>
+                                <fontDescription key="fontDescription" name="Charter-BoldItalic" family="Charter" pointSize="35"/>
                                 <color key="textColor" red="0.97647058823529409" green="0.41176470588235292" blue="0.054901960784313725" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
@@ -683,13 +654,22 @@
                                 <rect key="frame" x="16" y="161" width="343" height="290"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Lorem ipsum dolor sit amet,  consectetur adipiscing elit." textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="b6R-Ci-97k">
+                                <rect key="frame" x="21" y="516" width="333" height="99"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="99" id="FEd-FU-m5V"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="Charter-Italic" family="Charter" pointSize="28"/>
+                                <color key="textColor" red="0.97647058823529409" green="0.41176470588235292" blue="0.054901960784313725" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" red="0.20784313725490194" green="0.29803921568627451" blue="0.34901960784313724" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
-                            <constraint firstItem="DaQ-it-C4R" firstAttribute="bottom" secondItem="b6R-Ci-97k" secondAttribute="bottom" constant="84" id="0V2-F0-YmL"/>
+                            <constraint firstItem="DaQ-it-C4R" firstAttribute="bottom" secondItem="b6R-Ci-97k" secondAttribute="bottom" constant="52" id="0V2-F0-YmL"/>
                             <constraint firstItem="DaQ-it-C4R" firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="b6R-Ci-97k" secondAttribute="trailing" symbolic="YES" id="Ubl-Ja-ooE"/>
                             <constraint firstItem="xqU-iN-BwL" firstAttribute="leading" secondItem="DaQ-it-C4R" secondAttribute="leading" constant="109" id="m9O-qQ-Cbf"/>
-                            <constraint firstItem="b6R-Ci-97k" firstAttribute="leading" secondItem="DaQ-it-C4R" secondAttribute="leading" constant="16" id="pQ7-6J-8rn"/>
+                            <constraint firstItem="b6R-Ci-97k" firstAttribute="leading" secondItem="DaQ-it-C4R" secondAttribute="leading" constant="21" id="pQ7-6J-8rn"/>
                             <constraint firstItem="xqU-iN-BwL" firstAttribute="top" secondItem="DaQ-it-C4R" secondAttribute="top" constant="40" id="quo-cm-iqS"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="DaQ-it-C4R"/>
@@ -710,7 +690,7 @@
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Browse" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="l1c-5O-v6d">
                                 <rect key="frame" x="109" y="60" width="157" height="57"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" name="Oswald-Regular" family="Oswald" pointSize="35"/>
+                                <fontDescription key="fontDescription" name="Charter-BoldItalic" family="Charter" pointSize="35"/>
                                 <color key="textColor" red="0.97647058823529409" green="0.41176470588235292" blue="0.054901960784313725" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
@@ -719,7 +699,7 @@
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <string key="text">Lorem ipsum dolor sit amet,
 consectetur adipiscing elit.</string>
-                                <fontDescription key="fontDescription" type="system" pointSize="28"/>
+                                <fontDescription key="fontDescription" name="Charter-Italic" family="Charter" pointSize="26"/>
                                 <color key="textColor" red="0.97647058823529409" green="0.41176470588235292" blue="0.054901960784313725" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
@@ -747,7 +727,7 @@ consectetur adipiscing elit.</string>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Ready, Set" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="t49-Pe-lCn">
                                 <rect key="frame" x="79" y="66" width="217" height="66"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" name="Oswald-Regular" family="Oswald" pointSize="35"/>
+                                <fontDescription key="fontDescription" name="Charter-BoldItalic" family="Charter" pointSize="35"/>
                                 <color key="textColor" red="0.97647058823529409" green="0.41176470588235292" blue="0.054901960784313725" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
@@ -760,14 +740,14 @@ consectetur adipiscing elit.</string>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <string key="text">Lorem ipsum dolor sit amet,
 consectetur adipiscing elit.</string>
-                                <fontDescription key="fontDescription" type="system" pointSize="28"/>
+                                <fontDescription key="fontDescription" name="Charter-Italic" family="Charter" pointSize="26"/>
                                 <color key="textColor" red="0.97647058823529409" green="0.41176470588235292" blue="0.054901960784313725" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="vgu-4w-YAh">
                                 <rect key="frame" x="79" y="572" width="217" height="56"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" name="Oswald-Bold" family="Oswald" pointSize="25"/>
+                                <fontDescription key="fontDescription" name="Charter-BoldItalic" family="Charter" pointSize="25"/>
                                 <state key="normal" title="Start">
                                     <color key="titleColor" red="0.97647058823529409" green="0.41176470588235292" blue="0.054901960784313725" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 </state>
@@ -779,6 +759,9 @@ consectetur adipiscing elit.</string>
                         <color key="backgroundColor" red="0.20784313725490194" green="0.29803921568627451" blue="0.34901960784313724" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <viewLayoutGuide key="safeArea" id="WlP-pT-zdd"/>
                     </view>
+                    <connections>
+                        <outlet property="startButtonOutlet" destination="vgu-4w-YAh" id="CZF-US-6ia"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="8y9-jN-jvL" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -929,7 +912,7 @@ and external wash</string>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="g1K-uz-ouL">
                                 <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                                 <color key="backgroundColor" red="0.66666668650000005" green="0.66666668650000005" blue="0.66666668650000005" alpha="0.20000000000000001" colorSpace="custom" customColorSpace="sRGB"/>
-                                <state key="normal">
+                                <state key="normal" image="appleMap">
                                     <color key="titleShadowColor" red="0.5" green="0.5" blue="0.5" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 </state>
                                 <connections>
@@ -956,12 +939,12 @@ and external wash</string>
                                                     <rect key="frame" x="33" y="55" width="118" height="19"/>
                                                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                     <fontDescription key="fontDescription" name="HelveticaNeue-Light" family="Helvetica Neue" pointSize="17"/>
-                                                    <color key="textColor" red="0.57919406890000003" green="0.1280144453" blue="0.57268613580000005" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                    <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
                                             </subviews>
                                         </tableViewCellContentView>
-                                        <color key="backgroundColor" red="0.97647058823529409" green="0.41176470588235292" blue="0.054901960784313725" alpha="1" colorSpace="calibratedRGB"/>
+                                        <color key="backgroundColor" red="0.3650470890410959" green="0.41176470588235292" blue="0.054901960784313725" alpha="1" colorSpace="calibratedRGB"/>
                                     </tableViewCell>
                                 </prototypes>
                                 <connections>
@@ -1019,7 +1002,7 @@ and external wash</string>
         <image name="Group 487" width="217" height="217"/>
         <image name="Group 488" width="227" height="229"/>
         <image name="Group 489" width="220" height="219"/>
-        <image name="back" width="512" height="512"/>
+        <image name="appleMap" width="1242" height="2208"/>
     </resources>
     <inferredMetricsTieBreakers>
         <segue reference="vad-pl-2Od"/>

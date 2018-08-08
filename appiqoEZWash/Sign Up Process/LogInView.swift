@@ -17,30 +17,39 @@ class LogInView: UIViewController {
     
     @IBOutlet weak var logInButtonOutlat: UIButton!
     @IBOutlet weak var signUpButtonOutlat: UIButton!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-
-        signUpButtonOutlat.layer.cornerRadius = 30
-       
-        signUpButtonOutlat.clipsToBounds = true
-        signUpButtonOutlat.layer.borderColor = UIColor.white.cgColor
-      
-        signUpButtonOutlat.layer.borderWidth = 2
         
-        logInButtonOutlat.layer.cornerRadius = 15
+        buttonsDesign()
+   
         
-        logInButtonOutlat.clipsToBounds = true
-        logInButtonOutlat.layer.borderColor = UIColor.white.cgColor
-       
-        logInButtonOutlat.layer.borderWidth = 2
         
         let tap: UITapGestureRecognizer = UITapGestureRecognizer(target: self, action: #selector(ViewController.dismissKeyboard))
         view.addGestureRecognizer(tap)
 
     }
     
+    
     @objc func dismissKeyboard() {
         view.endEditing(true)
+    }
+    
+    
+    func buttonsDesign() {
+        signUpButtonOutlat.layer.cornerRadius = 30
+        
+        signUpButtonOutlat.clipsToBounds = true
+        signUpButtonOutlat.layer.borderColor = UIColor.white.cgColor
+        
+        signUpButtonOutlat.layer.borderWidth = 2
+        
+        logInButtonOutlat.layer.cornerRadius = 15
+        
+        logInButtonOutlat.clipsToBounds = true
+        logInButtonOutlat.layer.borderColor = UIColor.white.cgColor
+        
+        logInButtonOutlat.layer.borderWidth = 2
     }
 
     override func viewWillAppear(_ animated: Bool) {
@@ -50,12 +59,17 @@ class LogInView: UIViewController {
    
     @IBAction func signUpButton(_ sender: UIButton) {
         print("button working")
+        let storyboard = UIStoryboard(name: "Main", bundle: nil)
+        let vc = storyboard.instantiateViewController(withIdentifier: "locationDetailVC") as! locationDetailVC
+        navigationController?.pushViewController(vc, animated: true)
         
     }
     
     @IBAction func logInButton(_ sender: UIButton) {
-        let vc = UIStoryboard.init(name: "Main", bundle: nil).instantiateViewController(withIdentifier: "LogInView") as! LogInView
-        present(vc, animated: true, completion: nil)
+        
+        let vc = UIStoryboard.init(name: "Main", bundle: nil).instantiateViewController(withIdentifier: "logInVC") as! ViewController
+        navigationController?.pushViewController(vc, animated: true)
+//        present(vc, animated: true, completion: nil)
 
     }
 }

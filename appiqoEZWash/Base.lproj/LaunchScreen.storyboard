@@ -13,9 +13,6 @@
         <array key="Calibri.ttf">
             <string>Calibri</string>
         </array>
-        <array key="Oswald-Regular.ttf">
-            <string>Oswald-Regular</string>
-        </array>
     </customFonts>
     <scenes>
         <!--View Controller-->
@@ -38,9 +35,9 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="EZ WASH" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="SB5-xE-lTe">
-                                <rect key="frame" x="72" y="560" width="212" height="70"/>
+                                <rect key="frame" x="81" y="562" width="212" height="70"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" name="Oswald-Regular" family="Oswald" pointSize="35"/>
+                                <fontDescription key="fontDescription" name="Charter-BoldItalic" family="Charter" pointSize="35"/>
                                 <color key="textColor" red="0.97647058823529409" green="0.41176470588235292" blue="0.054901960784313725" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
