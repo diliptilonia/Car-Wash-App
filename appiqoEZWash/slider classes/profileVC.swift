@@ -7,10 +7,15 @@
 //
 
 import UIKit
+import DLRadioButton
 
 class profileVC: UIViewController {
 
+    @IBOutlet var otherButtons: [DLRadioButton]!
+    @IBOutlet weak var male: DLRadioButton!
+    @IBOutlet weak var female: DLRadioButton!
     @IBOutlet weak var profilePic: UIImageView!
+   
     override func viewDidLoad() {
         super.viewDidLoad()
 
@@ -22,21 +27,23 @@ class profileVC: UIViewController {
         
         // Do any additional setup after loading the view.
     }
-
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
+    @IBAction func selectedButton(_ sender: UIButton) {
+        if sender.isSelected == false {
+            print("selected")
+    }
+    else {
+    
+        sender.isSelected = true
     }
     
-
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destinationViewController.
-        // Pass the selected object to the new view controller.
     }
-    */
+}
 
+extension DLRadioButton {
+    func setSelected(_ selected: Bool) {
+        if self.isSelected != selected {
+            self.sendActions(for: .touchUpInside)
+            
+        }
+    }
 }

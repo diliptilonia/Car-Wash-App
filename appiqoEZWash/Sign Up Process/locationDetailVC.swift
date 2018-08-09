@@ -25,8 +25,8 @@ class locationDetailVC: UIViewController, UITextFieldDelegate {
         
         nextButtonOutlat.layer.borderWidth = 2
         
-        let tap: UITapGestureRecognizer = UITapGestureRecognizer(target: self, action: #selector(ViewController.dismissKeyboard))
-        view.addGestureRecognizer(tap)
+        hideKeyBoard()
+        
         
     }
     
@@ -44,9 +44,7 @@ class locationDetailVC: UIViewController, UITextFieldDelegate {
     }
 
     
-    @objc func dismissKeyboard() {
-        view.endEditing(true)
-    }
+   
     
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)

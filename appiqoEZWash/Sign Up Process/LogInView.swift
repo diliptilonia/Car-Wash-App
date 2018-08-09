@@ -25,15 +25,12 @@ class LogInView: UIViewController {
    
         
         
-        let tap: UITapGestureRecognizer = UITapGestureRecognizer(target: self, action: #selector(ViewController.dismissKeyboard))
-        view.addGestureRecognizer(tap)
+     hideKeyBoard()
 
     }
     
     
-    @objc func dismissKeyboard() {
-        view.endEditing(true)
-    }
+  
     
     
     func buttonsDesign() {

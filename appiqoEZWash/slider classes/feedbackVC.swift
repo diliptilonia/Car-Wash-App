@@ -10,10 +10,24 @@ import UIKit
 
 class feedbackVC: UIViewController {
 
+    @IBOutlet weak var feedbackTextField: UITextView!
+    @IBOutlet weak var submitButtonOutlet: UIButton!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-
-        // Do any additional setup after loading the view.
+        
+        hideKeyBoard()
+        
+        submitButtonOutlet.layer.cornerRadius = 30
+        
+        submitButtonOutlet.clipsToBounds = true
+        submitButtonOutlet.layer.borderColor = UIColor.white.cgColor
+        submitButtonOutlet.layer.borderWidth = 2
+        
+        feedbackTextField.layer.cornerRadius = 40
+        feedbackTextField.clipsToBounds = true
+        feedbackTextField.layer.borderColor = UIColor.white.cgColor
+        feedbackTextField.layer.borderWidth = 2
     }
 
     override func didReceiveMemoryWarning() {
@@ -21,15 +35,9 @@ class feedbackVC: UIViewController {
         // Dispose of any resources that can be recreated.
     }
     
-
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destinationViewController.
-        // Pass the selected object to the new view controller.
+    @IBAction func submitButton(_ sender: UIButton) {
     }
-    */
+    
+  
 
 }

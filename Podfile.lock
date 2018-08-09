@@ -1,20 +1,24 @@
 PODS:
+  - DLRadioButton (1.4.12)
   - JGProgressHUD (2.0.3)
   - KWVerificationCodeView (0.2.0)
 
 DEPENDENCIES:
+  - DLRadioButton (~> 1.4)
   - JGProgressHUD
   - KWVerificationCodeView
 
 SPEC REPOS:
   https://github.com/cocoapods/specs.git:
+    - DLRadioButton
     - JGProgressHUD
     - KWVerificationCodeView
 
 SPEC CHECKSUMS:
+  DLRadioButton: d7c4e225ed0e8013cef7be61455230c7557ad7c1
   JGProgressHUD: 12b20a8f4ffe05258f8635c1ab92816e451f904d
   KWVerificationCodeView: 213c7303ba43ff5fabffa77f4f558a76225a8f85
 
-PODFILE CHECKSUM: 3b582b0741d87f67d1e1023115aada344b368b39
+PODFILE CHECKSUM: c11550ddaf967f7cd0d0566fa0a014ab9c1bb615
 
 COCOAPODS: 1.5.3

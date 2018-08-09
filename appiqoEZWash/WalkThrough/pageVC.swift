@@ -54,9 +54,9 @@ class pageVC: UIPageViewController, UIPageViewControllerDelegate, UIPageViewCont
             return nil
         }
         let nextIndex = viewControllerIndex + 1
-        guard nextIndex < VCArr.count else {
-            return VCArr.first
-        }
+//        guard nextIndex < VCArr.count else {
+//            return VCArr.first
+//        }
         guard VCArr.count > nextIndex else {
             return nil
         }

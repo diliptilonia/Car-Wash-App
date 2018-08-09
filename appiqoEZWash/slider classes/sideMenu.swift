@@ -10,11 +10,17 @@ import UIKit
 
 class sideMenu: BaseViewController {
 
+    @IBOutlet weak var secheduleOutlet: UIButton!
     override func viewDidLoad() {
         super.viewDidLoad()
         UserDefaults.standard.set(true, forKey: "Home")
         UserDefaults.standard.set(true, forKey: "signUp")
-
+        
+        secheduleOutlet.layer.cornerRadius = 35
+        
+        secheduleOutlet.clipsToBounds = true
+        secheduleOutlet.layer.borderColor = UIColor.white.cgColor
+        secheduleOutlet.layer.borderWidth = 2
 
         self.addSlideMenuButton()
     }

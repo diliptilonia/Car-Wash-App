@@ -25,8 +25,7 @@ class OTPvc: UIViewController {
         submitOutLat.layer.borderColor = UIColor.white.cgColor
         submitOutLat.layer.borderWidth = 2
         
-        let tap: UITapGestureRecognizer = UITapGestureRecognizer(target: self, action: #selector(ViewController.dismissKeyboard))
-        view.addGestureRecognizer(tap)
+        hideKeyBoard()
         
     }
     
@@ -35,9 +34,6 @@ class OTPvc: UIViewController {
         verificationCodeView.tintColor = UIColor.orange
     }
     
-    @objc func dismissKeyboard() {
-        view.endEditing(true)
-    }
 
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()

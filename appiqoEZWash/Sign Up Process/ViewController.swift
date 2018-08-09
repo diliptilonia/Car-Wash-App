@@ -40,8 +40,7 @@ class ViewController: UIViewController, UITextFieldDelegate {
         signUpButtonOutlet.layer.borderWidth = 2
 
         
-        let tap: UITapGestureRecognizer = UITapGestureRecognizer(target: self, action: #selector(ViewController.dismissKeyboard))
-        view.addGestureRecognizer(tap)
+        hideKeyBoard()
     }
 
     
@@ -65,9 +64,6 @@ func showPicker() {
         self.navigationController?.setNavigationBarHidden(true, animated: animated)
     }
 
-    @objc func dismissKeyboard() {
-        view.endEditing(true)
-    }
     
     @IBAction func forgotButton(_ sender: UIButton) {
     }
