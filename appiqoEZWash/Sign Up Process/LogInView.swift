@@ -44,7 +44,7 @@ class LogInView: UIViewController {
         
         signUpButtonOutlat.layer.borderWidth = 2
         
-        logInButtonOutlat.layer.cornerRadius = 15
+        logInButtonOutlat.layer.cornerRadius = 30
         
         logInButtonOutlat.clipsToBounds = true
         logInButtonOutlat.layer.borderColor = UIColor.white.cgColor

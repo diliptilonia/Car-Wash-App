@@ -10,9 +10,16 @@ import UIKit
 
 class profileVC: UIViewController {
 
+    @IBOutlet weak var profilePic: UIImageView!
     override func viewDidLoad() {
         super.viewDidLoad()
 
+        profilePic.layer.borderWidth = 1
+        profilePic.layer.borderColor = UIColor.orange.cgColor
+        profilePic.layer.masksToBounds = false
+        profilePic.layer.cornerRadius = profilePic.frame.height/2 
+        profilePic.clipsToBounds = true
+        
         // Do any additional setup after loading the view.
     }
 

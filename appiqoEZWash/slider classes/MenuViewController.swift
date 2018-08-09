@@ -43,6 +43,7 @@ class MenuViewController: UIViewController, UITableViewDataSource, UITableViewDe
         super.viewDidLoad()
         tblMenuOptions.backgroundColor = UIColor.orange
         tblMenuOptions.tableFooterView = UIView()
+//        tblMenuOptions.estimatedRowHeight = 77
         // Do any additional setup after loading the view.
     }
     
@@ -119,8 +120,8 @@ class MenuViewController: UIViewController, UITableViewDataSource, UITableViewDe
         return 1;
     }
     func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
-        return 95
-        
+        return 100
+
     }
  
 }
