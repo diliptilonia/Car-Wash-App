@@ -17,6 +17,7 @@ class locationDetailVC: UIViewController, UITextFieldDelegate {
     override func viewDidLoad() {
         super.viewDidLoad()
         showPicker()
+        print("This is working in location vC")
 
         nextButtonOutlat.layer.cornerRadius = 30
         
@@ -29,6 +30,8 @@ class locationDetailVC: UIViewController, UITextFieldDelegate {
         
         
     }
+    
+    
     
     func showPicker() {
         let toolBar = UIToolbar()

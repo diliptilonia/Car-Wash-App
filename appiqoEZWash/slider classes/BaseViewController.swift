@@ -45,9 +45,21 @@ class BaseViewController: UIViewController, SlideMenuDelegate {
             
             break
         case 3:
-            print("Play\n", terminator: "")
+            print("Feedback\n", terminator: "")
             
             self.openViewControllerBasedOnIdentifier("Feedback")
+            
+            break
+        case 4:
+            print("LogOut\n", terminator: "")
+            
+//            self.openViewControllerBasedOnIdentifier("Logout")
+            
+            break
+        case 5:
+            print("LogOut\n", terminator: "")
+            
+            self.openViewControllerBasedOnIdentifier("Logout")
             
             break
         default:

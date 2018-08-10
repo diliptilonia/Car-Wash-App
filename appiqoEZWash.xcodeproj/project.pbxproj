@@ -31,6 +31,7 @@
 		89A97480211AC98600519A39 /* oswald in Resources */ = {isa = PBXBuildFile; fileRef = 89A9747E211AC98600519A39 /* oswald */; };
 		89A97482211ACA3E00519A39 /* calibri in Resources */ = {isa = PBXBuildFile; fileRef = 89A97481211ACA3D00519A39 /* calibri */; };
 		89B68BB6211C1F5500B00B9E /* ExtentionOfUIVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89B68BB5211C1F5500B00B9E /* ExtentionOfUIVC.swift */; };
+		89B68BD8211C562700B00B9E /* MyBookingDetails.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89B68BD7211C562700B00B9E /* MyBookingDetails.swift */; };
 		89BC846921143E4D00FC9306 /* locationDetailVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89BC846821143E4D00FC9306 /* locationDetailVC.swift */; };
 		89F2AD0121180AA5003AA9A4 /* scheduleCustomeCell2.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89F2AD0021180AA5003AA9A4 /* scheduleCustomeCell2.swift */; };
 		89F2AD03211824AC003AA9A4 /* myBookingCustomCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89F2AD02211824AC003AA9A4 /* myBookingCustomCell.swift */; };
@@ -66,6 +67,7 @@
 		89A9747E211AC98600519A39 /* oswald */ = {isa = PBXFileReference; lastKnownFileType = folder; path = oswald; sourceTree = "<group>"; };
 		89A97481211ACA3D00519A39 /* calibri */ = {isa = PBXFileReference; lastKnownFileType = folder; path = calibri; sourceTree = "<group>"; };
 		89B68BB5211C1F5500B00B9E /* ExtentionOfUIVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExtentionOfUIVC.swift; sourceTree = "<group>"; };
+		89B68BD7211C562700B00B9E /* MyBookingDetails.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyBookingDetails.swift; sourceTree = "<group>"; };
 		89BC846821143E4D00FC9306 /* locationDetailVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = locationDetailVC.swift; sourceTree = "<group>"; };
 		89F2AD0021180AA5003AA9A4 /* scheduleCustomeCell2.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = scheduleCustomeCell2.swift; sourceTree = "<group>"; };
 		89F2AD02211824AC003AA9A4 /* myBookingCustomCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = myBookingCustomCell.swift; sourceTree = "<group>"; };
@@ -152,9 +154,8 @@
 				89A5A06E211620FB004F6214 /* sideMenu.swift */,
 				89A5A072211695B0004F6214 /* profileVC.swift */,
 				89A5A07621169672004F6214 /* feedbackVC.swift */,
+				89B68BD9211C563200B00B9E /* MyBookingDetail */,
 				89A5A0782116968A004F6214 /* contactVC.swift */,
-				89A5A074211695C6004F6214 /* myBookingVC.swift */,
-				89F2AD02211824AC003AA9A4 /* myBookingCustomCell.swift */,
 				89A5A07A2116969D004F6214 /* logoutVC.swift */,
 			);
 			path = "slider classes";
@@ -167,6 +168,16 @@
 				89A9747E211AC98600519A39 /* oswald */,
 			);
 			path = Fonts;
+			sourceTree = "<group>";
+		};
+		89B68BD9211C563200B00B9E /* MyBookingDetail */ = {
+			isa = PBXGroup;
+			children = (
+				89A5A074211695C6004F6214 /* myBookingVC.swift */,
+				89B68BD7211C562700B00B9E /* MyBookingDetails.swift */,
+				89F2AD02211824AC003AA9A4 /* myBookingCustomCell.swift */,
+			);
+			path = MyBookingDetail;
 			sourceTree = "<group>";
 		};
 		89E4C0292116A976008B6C8B /* homePage */ = {
@@ -330,6 +341,7 @@
 				89A5A08921176BF6004F6214 /* washingType.swift in Sources */,
 				891A09AA2113F6EC00E881F7 /* pageVC.swift in Sources */,
 				89B68BB6211C1F5500B00B9E /* ExtentionOfUIVC.swift in Sources */,
+				89B68BD8211C562700B00B9E /* MyBookingDetails.swift in Sources */,
 				894120092118D21700601E9C /* launchedScreenDelay.swift in Sources */,
 				89A5A075211695C6004F6214 /* myBookingVC.swift in Sources */,
 				89A5A06A21161FF5004F6214 /* BaseViewController.swift in Sources */,

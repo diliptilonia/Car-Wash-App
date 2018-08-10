@@ -29,9 +29,6 @@ class myBookingVC: UIViewController, UITableViewDelegate, UITableViewDataSource 
         return tempBookingList
     }
 
-
- 
-
 }
 
 extension myBookingVC {
@@ -47,6 +44,22 @@ extension myBookingVC {
         
         cell.setWash(booked: booked)
         return cell
+    }
+    
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        let bookedData = bookingList[indexPath.row]
+        let storyboard = UIStoryboard(name: "Main", bundle: nil)
+        let vc = storyboard.instantiateViewController(withIdentifier: "MyBookingDetails") as! MyBookingDetails
+        vc.titleLab = bookedData.title
+        vc.addressLab = bookedData.address
+        vc.priceLab = bookedData.price
+        vc.orderStatuLab = bookedData.orderStatus
+        vc.dateLab = bookedData.date
+        vc.imageLab = bookedData.image
+        
+        navigationController?.pushViewController(vc, animated: true)
+        
+
     }
 }
 

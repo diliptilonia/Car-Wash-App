@@ -28,11 +28,7 @@ class LogInView: UIViewController {
      hideKeyBoard()
 
     }
-    
-    
-  
-    
-    
+
     func buttonsDesign() {
         signUpButtonOutlat.layer.cornerRadius = 30
         

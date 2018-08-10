@@ -10,26 +10,32 @@ import UIKit
 
 class logoutVC: UIViewController {
 
+    @IBOutlet weak var logOutOutlet: UIButton!
+    @IBOutlet weak var profilePic: UIImageView!
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        // Do any additional setup after loading the view.
+        profilePic.layer.borderWidth = 1
+        profilePic.layer.borderColor = UIColor.orange.cgColor
+        profilePic.layer.masksToBounds = false
+        profilePic.layer.cornerRadius = profilePic.frame.height/2
+        profilePic.clipsToBounds = true
+        
+        
+        logOutOutlet.layer.cornerRadius = 30
+        
+        logOutOutlet.clipsToBounds = true
+        logOutOutlet.layer.borderColor = UIColor.white.cgColor
+        
+        logOutOutlet.layer.borderWidth = 2
+        
+        logOutOutlet.layer.cornerRadius = 30
+        
+        
     }
 
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
+    @IBAction func logOutButton(_ sender: UIButton) {
+        print("Log out pressed")
     }
     
-
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destinationViewController.
-        // Pass the selected object to the new view controller.
-    }
-    */
-
 }

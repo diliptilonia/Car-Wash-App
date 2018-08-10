@@ -20,7 +20,6 @@ class OTPvc: UIViewController {
         
         
         submitOutLat.layer.cornerRadius = 30
-        
         submitOutLat.clipsToBounds = true
         submitOutLat.layer.borderColor = UIColor.white.cgColor
         submitOutLat.layer.borderWidth = 2
